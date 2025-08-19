@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="container bg-purple-600 flex justify-center items-center h-screen">
+        <div class="bg-white font-sans rounded-xl p-8 shadow-lg max-w-md w-full ">
+            <h2 class="text-center text-xl font-extrabold text-black font-sans mb-6">Form Validation</h2>
+
+            <form action="Submitted.html" method="get">
+                <div class="mb-6">
+                    <label class=" mb-0.5 block text-gray-700 font-medium">Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required
+                    class="w-full mt-1.5 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-2">
+                </div>
+
+                <div class="mb-6">
+                    <label class=" mb-0.5 block text-gray-700 font-medium">Email Address</label>
+                    <input type="text" placeholder="Enter your Email address" required
+                    class="w-full mt-1.5 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-2">
+                </div>
+
+                <div class="mb-6">
+                    <label class=" mb-0.5 block text-gray-700 font-medium">Password</label>
+                    <input type="text" placeholder="Enter your password" required
+                    class="w-full mt-1.5 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-2">
+                </div>
+
+                <div class="mb-6">
+                    <label class=" mb-0.5 block text-gray-700 font-medium">Date of birth</label>
+                    <input type="date" placeholder="dd/mm/yyyy" required
+                    class="w-full mt-1.5 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-2">
+                </div>
+
+                <div class="mb-8">
+                    <label class=" mb-0.5 block text-gray-700 font-medium">Gender</label>
+                    <select required
+                    class="w-full mt-1.5 px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-2">
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="py-2 font-semibold text-white bg-purple-500 w-full rounded-lg hover:bg-purple-700 ">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
