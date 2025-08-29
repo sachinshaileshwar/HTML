@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Bites Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff9f0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #ff6f61;
+      color: white;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    article img {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-bottom: 12px;
+      width: 100%;
+      max-width: 400px;
+    }
+    input[type="number"] {
+      width: 70px;
+    }
+    input[type="submit"] {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img id="header-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Restaurant Banner" width="100%" height="200">
+    <h1>Tasty Bites Restaurant</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order-form">Order Form</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1601924572340-3ccf7df0d379" alt="Pizza">
+        <div>
+          <h3>Margherita Pizza</h3>
+          <p>A classic thin-crust pizza topped with fresh mozzarella, basil, and tomato sauce. <i>$12.99</i></p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1617196034890-c80ecf908db8" alt="Burger">
+        <div>
+          <h3>Cheeseburger Deluxe</h3>
+          <p>A juicy beef patty with cheddar cheese, lettuce, tomato, and our house sauce. <i>$9.99</i></p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta">
+        <div>
+          <h3>Spaghetti Carbonara</h3>
+          <p>Rich pasta tossed in a creamy sauce with bacon, parmesan, and black pepper. <i>$11.49</i></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form>
+        <!-- Pizza Order -->
+        <label for="pizza-qty">Margherita Pizza Quantity:</label>
+        <input type="number" id="pizza-qty" name="pizza-qty" min="0">
+
+        <!-- Burger Order -->
+        <label for="burger-qty">Cheeseburger Deluxe Quantity:</label>
+        <input type="number" id="burger-qty" name="burger-qty" min="0">
+
+        <!-- Pasta Order -->
+        <label for="pasta-qty">Spaghetti Carbonara Quantity:</label>
+        <input type="number" id="pasta-qty" name="pasta-qty" min="0">
+
+        <!-- Add-ons -->
+        <p><strong>Sides & Add-ons:</strong></p>
+        <label><input type="checkbox" name="sides" value="fries"> French Fries (+$2.99)</label>
+        <label><input type="checkbox" name="sides" value="salad"> Garden Salad (+$3.49)</label>
+        <label><input type="checkbox" name="sides" value="drink"> Soft Drink (+$1.99)</label>
+
+        <!-- Delivery Options -->
+        <p><strong>Delivery Option:</strong></p>
+        <label><input type="radio" name="delivery" value="pickup" required> Pickup</label>
+        <label><input type="radio" name="delivery" value="delivery"> Home Delivery</label>
+
+        <!-- Special Requests -->
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Any extra instructions..."></textarea>
+
+        <br>
+        <input type="submit" value="Go To Checkout">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with love by SachinShaileshwar</p>
+  </footer>
+
+</body>
+</html>
